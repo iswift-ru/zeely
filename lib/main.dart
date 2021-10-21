@@ -1,6 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'presentation/clients_catalog.dart';
+import 'clients/presentation/clients_catalog.dart';
 import 'translations/codegen_loader.g.dart';
 
 void main() async {
@@ -16,6 +16,7 @@ void main() async {
       ],
       path: 'assets/translations',
       fallbackLocale: const Locale('ru'),
+      startLocale: const Locale('ru'),
       assetLoader: const CodegenLoader(),
     ),
   );

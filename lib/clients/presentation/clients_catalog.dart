@@ -64,7 +64,7 @@ class _ClientsCatalogState extends State<ClientsCatalog> {
           ),
           BottomNavigationBarItem(
             icon: SvgPicture.asset(IconHelpers.seo),
-            label: (LocaleKeys.seo).tr(),
+            label: (LocaleKeys.promotion).tr(),
             backgroundColor: Colors.white,
           ),
           BottomNavigationBarItem(

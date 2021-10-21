@@ -21,10 +21,9 @@ class CodegenLoader extends AssetLoader{
   "success": "Успешно",
   "archive": "Архив",
   "mysite": "Мой сайт",
-  "seo": "Продвижение",
-  "Clients": "Клиенты",
   "assistent": "Ассистент",
-  "marsel": "marsel.zeely.me"
+  "marsel": "marsel.zeely.me",
+  "promotion": "Продвижение"
 };
 static const Map<String,dynamic> en = {
   "all": "All",
@@ -33,10 +32,9 @@ static const Map<String,dynamic> en = {
   "success": "Success",
   "archive": "Archive",
   "mysite": "My site",
-  "seo": "SEO",
-  "Clients": "Clients",
   "assistent": "Assistent",
-  "marsel": "marsel.zeely.me"
+  "marsel": "marsel.zeely.me",
+  "promotion": "Promotion"
 };
 static const Map<String, Map<String,dynamic>> mapLocales = {"ru": ru, "en": en};
 }

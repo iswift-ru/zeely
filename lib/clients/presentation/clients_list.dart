@@ -36,7 +36,7 @@ class _ClientsListState extends State<ClientsList> {
           children: [
             SvgPicture.asset(IconHelpers.upload),
             const Spacer(),
-            const Text(LocaleKeys.marsel).tr(),
+            const Text(LocaleKeys.marsel, style: TextStyle(fontSize: 13)).tr(),
             const SizedBox(width: 10),
             SvgPicture.asset(IconHelpers.arrow),
             const Spacer(),
@@ -45,10 +45,60 @@ class _ClientsListState extends State<ClientsList> {
         ),
       );
 
-  Widget cardClient() => const Padding(
-        padding: EdgeInsets.only(top: 9),
+  Widget cardClient() => Padding(
+        padding: const EdgeInsets.only(top: 9),
         // TODO: Не стал выносить это в локализацию, т.к. я так понимаю эти данные будут приходить с сервера
-        child: CardClient(title: 'Александр Емельяненко', email: 'alexander.emeln9nenko@yandex.ru', time: '12:23', phone: '+38 066 872 84 94'),
+        child: Column(
+          children: const [
+            CardClient(
+              title: 'Александр Емельяненко',
+              email: 'alexander.emeln9nenko@yandex.ru',
+              time: '12:23',
+              phone: '+38 066 872 84 94',
+              inwork: false,
+              paper: false,
+              textBold: true,
+              backgraund: true,
+              point: true,
+            ),
+            SizedBox(height: 1),
+            CardClient(
+              title: 'Станислав',
+              email: 'stt.work@gmail.com',
+              time: '12:23',
+              phone: '+38 066 872 84 94',
+              inwork: false,
+              paper: false,
+              textBold: true,
+              backgraund: true,
+              point: true,
+            ),
+            SizedBox(height: 1),
+            CardClient(
+              title: 'Константин  Литвиненко',
+              email: 'alexander.emeln9nenko@yandex.ru',
+              time: 'Вчера',
+              phone: '+38 066 872 84 94',
+              inwork: true,
+              paper: true,
+              textBold: false,
+              backgraund: false,
+              point: false,
+            ),
+            SizedBox(height: 1),
+            CardClient(
+              title: 'Константин Литвиненко',
+              email: 'alexander.emeln9nenko@yandex.ru',
+              time: '22/10',
+              phone: '+38 066 872 84 94',
+              inwork: false,
+              paper: false,
+              textBold: false,
+              backgraund: false,
+              point: false,
+            ),
+          ],
+        ),
       );
 
   Widget buttonsList() => SizedBox(

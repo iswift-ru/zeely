@@ -9,9 +9,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   final String title;
 
-//TODO: Не понятно по дизайну высота аппбара сделал на глаз 70
   @override
-  Size get preferredSize => const Size.fromHeight(70);
+  Size get preferredSize => const Size.fromHeight(66);
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +21,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           icon: SvgPicture.asset(IconHelpers.lightning),
           onPressed: () {},
         ),
-        const SizedBox(width: 20),
+        const SizedBox(width: 15),
         Transform.translate(
           offset: const Offset(-10, 0),
           child: IconButton(
@@ -36,7 +35,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: false,
       title: Text(
         title,
-        style: const TextStyle(fontSize: 16),
+        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
       ),
       flexibleSpace: Container(
         decoration: const BoxDecoration(gradient: GradientHelpers.gradient),

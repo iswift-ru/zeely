@@ -12,6 +12,8 @@ class ButtonBase extends StatelessWidget {
     return OutlinedButton(
       onPressed: onPressed,
       style: OutlinedButton.styleFrom(
+        minimumSize: const Size(52, 31),
+        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 6),
         backgroundColor: isActive ? darkPurple : greyLight,
         side: BorderSide(
           color: isActive ? darkPurple : greyLight,
