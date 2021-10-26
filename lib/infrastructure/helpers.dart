@@ -19,6 +19,9 @@ class IconHelpers {
   static const String profile = 'assets/icons/profile.svg';
   static const String paper = 'assets/icons/paper.svg';
   static const String inwork = 'assets/icons/inwork.svg';
+  static const String green_clients = 'assets/icons/green_clients.svg';
+  static const String phone_icon = 'assets/icons/phone_icon.svg';
+  static const String back_arrow = 'assets/icons/back_arrow.svg';
 }
 
 class GradientHelpers {
