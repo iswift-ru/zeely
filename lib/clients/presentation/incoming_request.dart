@@ -103,7 +103,7 @@ class IncomingRequest extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  height: 18,
+                  height: 20,
                 ),
                 const NoteItem(
                   date: 'Сегодня',

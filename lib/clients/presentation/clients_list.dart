@@ -48,7 +48,7 @@ class _ClientsListState extends State<ClientsList> {
       );
 
   Widget cardClient() => Padding(
-        padding: const EdgeInsets.only(top: 9),
+        padding: const EdgeInsets.only(top: 10),
         // TODO: Не стал выносить это в локализацию, т.к. я так понимаю эти данные будут приходить с сервера
         child: Column(
           children: [
@@ -159,9 +159,9 @@ class _ClientsListState extends State<ClientsList> {
                   children: [
                     barWidget(),
                     const SizedBox(height: 34),
-                    // buttonsList(),
+                    buttonsList(),
                     cardClient(),
-                    const NoRequest()
+                    // const NoRequest()
                   ],
                 ),
               ),
