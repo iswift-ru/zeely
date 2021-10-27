@@ -49,7 +49,7 @@ class IncomingRequest extends StatelessWidget {
       body: Stack(
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 16, right: 16, top: 25),
+            padding: const EdgeInsets.only(left: 16, right: 16, top: 15),
             child: ListView(
               children: [
                 const CardClientIncomingRequest(
