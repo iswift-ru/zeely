@@ -10,18 +10,18 @@ class NoRequest extends StatelessWidget {
     return Column(
       children: [
         const SizedBox(
-          height: 117,
+          height: 120,
         ),
         SvgPicture.asset(IconHelpers.green_clients),
         const SizedBox(
-          height: 15,
+          height: 18,
         ),
         const Text(
           'Заявок пока нет',
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
         const SizedBox(
-          height: 15,
+          height: 18,
         ),
         const Text(
           'Запусти онлайн-продвижение, чтобы',
@@ -29,15 +29,15 @@ class NoRequest extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         const SizedBox(
-          height: 10,
+          height: 14,
         ),
         const Text(
-          'nполучить первых клиентов',
+          'получить первых клиентов',
           style: TextStyle(fontSize: 13),
           textAlign: TextAlign.center,
         ),
         const SizedBox(
-          height: 20,
+          height: 22,
         ),
         const Text(
           'Активировать продвижение',

@@ -16,11 +16,19 @@ class IncomingRequest extends StatelessWidget {
       resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
       appBar: AppBar(
-        // leading: SvgPicture.asset(
-        //   IconHelpers.back_arrow,
-        //   height: 24,
-        //   width: 24,
-        // ),
+        automaticallyImplyLeading: false,
+        leadingWidth: 24,
+        leading: Transform.translate(
+          offset: const Offset(16, 0),
+          child: GestureDetector(
+            onTap: () => Navigator.pop(context),
+            child: SvgPicture.asset(
+              IconHelpers.back_arrow,
+              height: 24,
+              width: 24,
+            ),
+          ),
+        ),
         elevation: 0.0,
         iconTheme: const IconThemeData(
           color: Colors.black, //change your color here
@@ -41,7 +49,7 @@ class IncomingRequest extends StatelessWidget {
       body: Stack(
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 16, right: 16, top: 30),
+            padding: const EdgeInsets.only(left: 16, right: 16, top: 25),
             child: ListView(
               children: [
                 const CardClientIncomingRequest(
@@ -75,7 +83,7 @@ class IncomingRequest extends StatelessWidget {
                       ),
                     ),
                     StatusButtonIncomingRequest(
-                      icon: IconHelpers.portfel,
+                      icon: IconHelpers.folder,
                       title: 'В архив',
                       colorButton: Colors.white,
                       colorText: Color(
@@ -88,14 +96,14 @@ class IncomingRequest extends StatelessWidget {
                   height: 22,
                 ),
                 const Text(
-                  'ЗАМЕТКИ',
+                  'Заметки',
                   style: TextStyle(
                     fontSize: 15,
                     color: Color(0xff172026),
                   ),
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 18,
                 ),
                 const NoteItem(
                   date: 'Сегодня',
