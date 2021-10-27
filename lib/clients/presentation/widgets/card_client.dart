@@ -58,7 +58,7 @@ class CardClient extends StatelessWidget {
                     const Spacer(),
                     Text(
                       time,
-                      style: TextStyle(color: textBold ? colorBlack : colorGrey),
+                      style: TextStyle(color: textBold ? colorBlack : colorGrey, fontSize: 12),
                     ),
                   ],
                 ),

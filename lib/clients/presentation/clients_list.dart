@@ -158,10 +158,10 @@ class _ClientsListState extends State<ClientsList> {
                 child: Column(
                   children: [
                     barWidget(),
-                    const SizedBox(height: 30),
-                    buttonsList(),
+                    const SizedBox(height: 34),
+                    // buttonsList(),
                     cardClient(),
-                    // const NoRequest()
+                    const NoRequest()
                   ],
                 ),
               ),

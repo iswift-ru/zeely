@@ -129,7 +129,7 @@ class IncomingRequest extends StatelessWidget {
             ),
           ),
           Align(
-            heightFactor: 37,
+            heightFactor: 36,
             alignment: Alignment.bottomCenter,
             child: GestureDetector(
               onTap: () {},

@@ -17,13 +17,16 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       elevation: 0.0,
       actions: [
-        IconButton(
-          icon: SvgPicture.asset(IconHelpers.lightning),
-          onPressed: () {},
+        Transform.translate(
+          offset: const Offset(0, -5),
+          child: IconButton(
+            icon: SvgPicture.asset(IconHelpers.lightning),
+            onPressed: () {},
+          ),
         ),
         const SizedBox(width: 15),
         Transform.translate(
-          offset: const Offset(-10, 0),
+          offset: const Offset(-10, -5),
           child: IconButton(
             icon: SvgPicture.asset(
               IconHelpers.profile,
@@ -33,9 +36,12 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         ),
       ],
       centerTitle: false,
-      title: Text(
-        title,
-        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+      title: Transform.translate(
+        offset: const Offset(0, -5),
+        child: Text(
+          title,
+          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+        ),
       ),
       flexibleSpace: Container(
         decoration: const BoxDecoration(gradient: GradientHelpers.gradient),

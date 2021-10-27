@@ -21,7 +21,7 @@ class NoRequest extends StatelessWidget {
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
         const SizedBox(
-          height: 18,
+          height: 19,
         ),
         const Text(
           'Запусти онлайн-продвижение, чтобы',
@@ -29,7 +29,7 @@ class NoRequest extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         const SizedBox(
-          height: 14,
+          height: 13,
         ),
         const Text(
           'получить первых клиентов',

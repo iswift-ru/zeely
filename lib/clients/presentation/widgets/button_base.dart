@@ -12,12 +12,11 @@ class ButtonBase extends StatelessWidget {
     return OutlinedButton(
       onPressed: onPressed,
       style: OutlinedButton.styleFrom(
+        elevation: 0.0,
         minimumSize: const Size(52, 31),
-        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 6),
+        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 4),
         backgroundColor: isActive ? darkPurple : greyLight,
-        side: BorderSide(
-          color: isActive ? darkPurple : greyLight,
-        ),
+        side: BorderSide(color: isActive ? darkPurple : greyLight, style: BorderStyle.solid),
       ),
       child: Text(
         title,
